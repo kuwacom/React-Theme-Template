@@ -3,7 +3,7 @@ import React from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import { useTheme } from '@mui/material/styles';
-import Theme from '../Theme';
+import Theme from '../utils/theme';
 import { AppBar, Box,
     Button, IconButton, ToggleButtonGroup, ToggleButton,
     Container, Menu, MenuItem,
@@ -18,7 +18,7 @@ const Header:React.FC = () => {
     const scrolled = useScrollTrigger({ // スクロール検知
         disableHysteresis: true
     });
-    const darkModeContext = React.useContext(Theme.DarkModeContext);
+    const darkModeContext = Theme.useDarkMode();
     const changeDarkMode = (event: React.MouseEvent<HTMLElement>, darkMode: boolean) => {
         darkModeContext.setDarkMode(darkMode);
     };
@@ -81,9 +81,9 @@ const Header:React.FC = () => {
                 >
                     <Box
                     component='a'
-                    href='https://gokatei.dev/'
+                    href='https://kuwa.app/'
                     color={(theme)=>(alpha(theme.palette.text.primary, 0.6))}>
-                        gokatei.dev
+                        kuwa.app
                     </Box>
                 </Typography>
             </Box>
@@ -100,7 +100,7 @@ const Header:React.FC = () => {
                 borderRadius: 2,
                 height: 32
             })}>
-                <a href='https://github.com/gokatei' target='_brank'>
+                <a href='https://github.com/kuwacom' target='_brank'>
                     <GitHub fontSize='small' color='primary' />
                 </a>
             </IconButton>

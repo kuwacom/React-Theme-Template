@@ -5,3 +5,5 @@ my template
 - Material-UI(MainUI ThemeSystem)
 - Emotion(style)
 - Bootstrap
+# Used Websocket Library
+- react-use-websocket

@@ -1,3 +1,7 @@
+const wsServer = {
+    url: "ws://localhost:18765/"
+}
+
 const imagePath = {
     logo: "/images/logo.png"
 }
@@ -6,4 +10,4 @@ const pages: string[] = [
 
 ]
 
-export default { imagePath, pages }
+export default { wsServer, imagePath, pages }

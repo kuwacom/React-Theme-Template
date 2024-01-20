@@ -1,9 +1,8 @@
-# react-theme-template
+# React-Theme-Template
 my template
 
 # Used UI-Components
 - Material-UI(MainUI ThemeSystem)
 - Emotion(style)
-- Bootstrap
 # Used Websocket Library
 - react-use-websocket

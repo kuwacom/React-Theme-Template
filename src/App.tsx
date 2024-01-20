@@ -104,7 +104,7 @@ const App: FC = () => {
                 }
               });
             },
-            setDarkMode: (darkMode: Boolean) => {
+            setDarkMode: (darkMode: boolean) => {
               setDarkMode(() => {
                 if (darkMode) {
                   localStorage.setItem('darkMode', 'true');

@@ -1,0 +1,20 @@
+{
+    "name": "React Theme Template",
+    "short_name": "React Theme Template",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/favicons/favicon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#499189",
+    "background_color": "#fafafa",
+    "display": "standalone"
+}

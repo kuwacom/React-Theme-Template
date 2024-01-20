@@ -31,7 +31,7 @@ const App: FC = () => {
     onOpen: () => {
       console.log('start connection!');
     },
-    shouldReconnect: (closeEvent) => {
+    shouldReconnect: () => {
       console.log('reconnecting...');
       return true;
     },

@@ -1,17 +1,13 @@
 import React from 'react';
-/** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
 
 import Theme from '../utils/theme';
 import connection from '../utils/connection';
 import {
   styled,
-  useTheme,
   Button,
   Paper,
   Grid,
   Tooltip,
-  Divider,
   List,
   ListItem,
   ListSubheader,
@@ -20,13 +16,7 @@ import {
   TextField,
 } from '@mui/material';
 
-const HomeCSS = css({
-  textAlign: 'center',
-  paddingLeft: '10px',
-  fontFamily: 'SmartFontUI',
-});
-
-const Item = styled(Paper)(({ theme }) => ({
+const Item = styled(Paper)(() => ({
   textAlign: 'center',
 }));
 
@@ -48,7 +38,13 @@ const Home: React.FC = () => {
   }
 
   return (
-    <div css={HomeCSS}>
+    <div
+      style={{
+        textAlign: 'center',
+        paddingLeft: '10px',
+        fontFamily: 'SmartFontUI',
+      }}
+    >
       <h1
         style={{
           paddingTop: count + 'px',

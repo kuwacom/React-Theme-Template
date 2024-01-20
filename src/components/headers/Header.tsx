@@ -16,7 +16,7 @@ import {
   ListSubheader,
   ListItemText,
   alpha,
-  useScrollTrigger,
+  // useScrollTrigger,
 } from '@mui/material';
 import {
   GitHub,
@@ -30,10 +30,10 @@ import { useState } from 'react';
 
 const Header: React.FC = () => {
   const palette = useTheme().palette;
-  const scrolled = useScrollTrigger({
-    // スクロール検知
-    disableHysteresis: true,
-  });
+  // const scrolled = useScrollTrigger({
+  //   // スクロール検知
+  //   disableHysteresis: true,
+  // });
   const darkModeContext = Theme.useDarkMode();
   const changeDarkMode = (
     event: React.MouseEvent<HTMLElement>,

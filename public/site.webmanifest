@@ -1,20 +1,15 @@
 {
-    "name": "Emunitas",
-    "short_name": "Emunitas",
-    "start_url" : "/",
+    "name": "React Theme Template",
+    "short_name": "React Theme Template",
+    "start_url": "/",
     "icons": [
         {
-            "src": "/favicons/favicon-128x128.png",
-            "sizes": "128x128",
-            "type": "image/png"
-        },
-        {
-            "src": "/favicons/favicon-512x512.png",
-            "sizes": "512x512",
+            "src": "/favicons/favicon.png",
+            "sizes": "256x256",
             "type": "image/png"
         }
     ],
-    "theme_color": "#499189",
+    "theme_color": "#80d8ff",
     "background_color": "#fafafa",
     "display": "standalone"
 }
